@@ -16,7 +16,7 @@ export default function PaymentSuccess() {
 
   useEffect(() => {
     triggerConfetti();
-  }, []);
+  }, [triggerConfetti]);
 
   return (
     <div className='flex min-h-screen w-full flex-1 items-center justify-center'>

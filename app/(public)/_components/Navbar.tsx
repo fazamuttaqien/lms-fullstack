@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 
 import { buttonVariants } from "@/components/ui/button";
@@ -8,8 +7,6 @@ import { buttonVariants } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/theme/theme-toogle";
 
 import { authClient } from "@/lib/auth-client";
-
-import Logo from "@/public/logo.png";
 
 import { UserDropdown } from "./UserDropdown";
 

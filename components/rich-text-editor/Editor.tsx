@@ -6,6 +6,7 @@ import StarterKit from "@tiptap/starter-kit";
 
 import { Menubar } from "./Menubar";
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function RichTextEditor({ field }: { field: any }) {
   const editor = useEditor({
     extensions: [
@@ -28,7 +29,7 @@ export function RichTextEditor({ field }: { field: any }) {
   });
 
   return (
-    <div className='border-input dark:bg-input/30 w-full overflow-hidden rounded-lg border'>
+    <div className="border-input dark:bg-input/30 w-full overflow-hidden rounded-lg border">
       <Menubar editor={editor} />
       <EditorContent editor={editor} />
     </div>

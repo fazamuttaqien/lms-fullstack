@@ -1,3 +1,5 @@
+"use server";
+
 import { prisma } from "@/lib/db";
 import { ApiResponse } from "@/lib/types";
 import { LessonSchemaType, lessonSchema } from "@/lib/zod-schemas";
@@ -35,7 +37,7 @@ export async function updateLesson(
       status: "success",
       message: "Course updated successfully",
     };
-  } catch (error) {
+  } catch {
     return {
       status: "error",
       message: "Failed to update  course",

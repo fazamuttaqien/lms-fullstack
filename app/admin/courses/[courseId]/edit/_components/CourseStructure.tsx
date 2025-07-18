@@ -27,7 +27,6 @@ import {
   ChevronRight,
   FileText,
   GripVertical,
-  Trash2,
 } from "lucide-react";
 import { toast } from "sonner";
 

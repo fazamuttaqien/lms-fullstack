@@ -1,15 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import { useRouter } from "next/navigation";
-
-import { toast } from "sonner";
 
 import { Badge } from "@/components/ui/badge";
 import { buttonVariants } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-
-import { authClient } from "@/lib/auth-client";
 
 interface featureProps {
   title: string;
@@ -45,20 +40,6 @@ const features: featureProps[] = [
 ];
 
 export default function Home() {
-  const router = useRouter();
-  const { data: session } = authClient.useSession();
-
-  async function signOut() {
-    await authClient.signOut({
-      fetchOptions: {
-        onSuccess: () => {
-          router.push("/");
-          toast.success("Sign out successful");
-        },
-      },
-    });
-  }
-
   return (
     <>
       <section className='relative py-20'>

@@ -2,7 +2,6 @@
 
 import * as React from "react";
 
-import Image from "next/image";
 import Link from "next/link";
 
 import {
@@ -32,8 +31,6 @@ import {
 import { NavMain } from "@/components/sidebar/nav-main";
 import { NavSecondary } from "@/components/sidebar/nav-secondary";
 import { NavUser } from "@/components/sidebar/nav-user";
-
-import Logo from "@/public/logo.png";
 
 const data = {
   user: {

@@ -1,9 +1,8 @@
-import { cache } from "react";
-
-import { headers } from "next/headers";
-import { redirect } from "next/navigation";
-
 import "server-only";
+
+import { cache } from "react";
+import { redirect } from "next/navigation";
+import { headers } from "next/headers";
 
 import { auth } from "@/lib/auth";
 

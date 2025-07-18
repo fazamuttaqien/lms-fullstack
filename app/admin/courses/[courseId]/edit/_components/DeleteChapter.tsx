@@ -17,7 +17,7 @@ import { Button } from "@/components/ui/button";
 
 import { tryCatch } from "@/lib/try-catch";
 
-import { deleteChapter, deleteLesson } from "../action";
+import { deleteChapter } from "../action";
 
 export function DeleteChapter({
   chapterId,

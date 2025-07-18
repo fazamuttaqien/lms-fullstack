@@ -3,12 +3,9 @@
 import Link from "next/link";
 
 import {
-  IconCreditCard,
   IconDashboard,
   IconDotsVertical,
   IconLogout,
-  IconNotification,
-  IconUserCircle,
 } from "@tabler/icons-react";
 import { HomeIcon, Tv2 } from "lucide-react";
 

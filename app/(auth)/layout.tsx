@@ -1,11 +1,7 @@
-import Image from "next/image";
 import Link from "next/link";
-
 import { ArrowLeft } from "lucide-react";
 
 import { buttonVariants } from "@/components/ui/button";
-
-import Logo from "@/public/logo.png";
 
 export default function AuthLayout({
   children,
@@ -29,7 +25,6 @@ export default function AuthLayout({
           href='/'
           className='flex items-center gap-2 self-center font-medium'
         >
-          {/* <Image src={Logo} alt="Log" width={32} height={32} /> */}
           Acme Inc.
         </Link>
         {children}
